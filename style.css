@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    /* text-shadow: 0 0 10px white; */
+    /* font-size: 1.3rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+}
+/* .fa-brands{
+    color: white;
+    padding: 20px 20px;
+} */
+
+.logo-meta{
+    /* color: white; */
+    background-color: white;
+    /* background: transparent; */
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+}
+
+.side-nav{
+    background-color: rgb(135, 135, 135);
+    /* background: transparent; */
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 82vh;
+    width: 200px;
+    /* display: none; */
+    padding: 40px 40px;
+    box-shadow: 0 0 20px rgb(135, 135, 135);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transform: translateX(190px);
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+.side-nav:hover{
+    transform: translateX(0px);
+
+    
+}
+.go{
+    margin: 20px 2px;
+    /* border: 2px solid black; */
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    /* border-bottom: 2px solid white; */
+    /* border-bottom-width: 0% ; */
+    transition: 0.6s ease-in-out;
+    color: white;
+}
+.go:hover{
+    /* border-bottom: 2px solid aqua; */
+    /* border-bottom-width: 100% ; */
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.go:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 0.6s ease-in-out;
+    
+  }
+.go:hover:after { transform: scaleX(1); }
+.go:after{  transform-origin:  0% 50%; }
+
+
+
+
+/* .logo-meta:target + .side-nav {
+    display: block;
+    transform: translateX(-200px);
+
+} */
+
+/* .logo-meta:hover  .side-nav{
+    transform: translateX(-100px);
+} */
+
+
+.main-section{
+    width: 100%;
+    height: 100vh;
+    /* padding: 100px; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+#main{
+    width: 900px;
+    margin-left: -100px;
+    margin-top: 10px;
+    /* box-shadow: 0 0 200px #fff inset; */
+    /* border: none; */
+    box-shadow: inset 0 0 20px white;
+    
+    /* filter:drop-shadow(2px 2px 10px white); */
+}
+#text{
+    margin-top: 100px;
+    font-size: 1.6rem;
+    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    left: 600px;
+    position: absolute;
+    top: 25%;
+    /* border: 2px solid white; */
+    /* border-radius: 900000px;
+    overflow: hidden;
+    opacity: 0.5;
+    transition: 1s;
+    text-shadow: 2px 2px 10px white; */
+}
+#text:hover{
+    border: none;
+    opacity: 1;
+    border-radius: none;
+
+
+}
+span{
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+#date{
+    position: absolute;
+    top: 200px;
+    left: 610px;
+    letter-spacing: 10px;
+    opacity: 0.5;
+
+}
+
+footer{
+    
+    
+}
+#links{
+    display: flex;
+
+}
+#links li{
+    padding: 10px 10px;
+
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+@media (max-width:1080px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+    }
+    nav{
+        width: 1270px;
+        
+    }
+    .main-image img{
+        position: absolute;
+        top: 100px;
+        left: 300px;
+        
+    }
+    .side-nav{
+        transform: translateX(380px);
+        width: 400px;
+
+    }
+    .go{
+        font-size: 3rem;
+        margin: 90px 10px;
+
+    }
+    .side-nav:hover{
+        transform: translateX(200px)
+    }
+    #date{
+        position: absolute;
+        top: 800px;
+        left: 300px;
+        font-size: 3rem;
+    }
+    #text{
+        position: absolute;
+        top: 900px;
+        left: 300px;
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+
+
